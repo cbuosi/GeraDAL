@@ -1,0 +1,69 @@
+﻿/****** StoredProcedure __NOME_PROC__ Script Date: __DATA_CRIACAO__ *****/
+USE __BANCO__
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[__NOME_PROC__]
+	__LOOP_PARAMETROS_PROC__
+AS 
+BEGIN 
+
+	SET NOCOUNT ON
+
+	IF @OPERACAO = 'OBTE'
+	BEGIN
+		SELECT
+			__LOOP_NOME_CAMPOS__
+		FROM
+			__NOME_TABELA__
+		WHERE
+			__CONDICAO__
+			
+		RETURN		
+	END
+	
+	IF @OPERACAO = 'INSE'
+	BEGIN
+
+		INSERT INTO
+			__NOME_TABELA__
+			(__LOOP_NOME_CAMPOS__)
+		VALUES
+			(__LOOP_NOME_PARAMETROS__)			
+		
+		SELECT @@identity AS __CAMPO_CHAVE__
+
+		RETURN
+
+	END
+
+	IF @OPERACAO = 'ALTE'  
+	BEGIN
+	
+		UPDATE
+			__NOME_TABELA__
+		SET
+			__LOOP_SET_CAMPOS__
+
+		WHERE
+			__CONDICAO__
+				
+		RETURN
+		
+	END
+	
+		
+	IF @OPERACAO = 'DELE' --OK
+	BEGIN
+		DELETE FROM
+			__NOME_TABELA__
+		WHERE
+			__CONDICAO__
+			
+		RETURN
+	END
+	
+END
