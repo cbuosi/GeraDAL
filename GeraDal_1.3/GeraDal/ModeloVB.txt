@@ -27,7 +27,7 @@ __LOOP_ESTRUTURA__
             bDados = New BancoDados()
 
             bDados.LimpaParametros()
-            bDados.AdicionaParametro(OPERACAO, "INCL")
+            bDados.AdicionaParametro(OPERACAO, "INSE")
 __LOOP_ADD_PARM_COMPLETO__
 
             bDados.Executar("__NOME_PROC__")
@@ -105,8 +105,8 @@ __LOOP_ADD_PARM_CHAVE__
         End Try
     End Function
 
-    '04-Listar
-    Public Shared Function Listar(__LOOP_PARM_FUNC_CHAVE__) As SuperDataSet
+    '04-Obter
+    Public Shared Function Obter(__LOOP_PARM_FUNC_CHAVE__) As SuperDataSet
 
         Dim rsRet As SuperDataSet
         Dim bDados As BancoDados
@@ -116,7 +116,7 @@ __LOOP_ADD_PARM_CHAVE__
             bDados = New BancoDados()
 
             bDados.LimpaParametros()
-            bDados.AdicionaParametro(OPERACAO, "LIST")
+            bDados.AdicionaParametro(OPERACAO, "OBTE")
 __LOOP_ADD_PARM_CHAVE__
 
             rsRet = bDados.Obter("__NOME_PROC__")

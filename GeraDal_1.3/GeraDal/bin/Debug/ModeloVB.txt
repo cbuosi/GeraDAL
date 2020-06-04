@@ -1,0 +1,136 @@
+﻿'Classe criada automaticamente em __DATA_CRIACAO__
+Option Strict On
+Option Explicit On
+Option Infer On
+
+Imports Sonda.Util
+Imports Sonda.Util.BancoDados
+
+
+Public Class __NOME_PROC__
+
+    'Operacao
+    Public Shared OPERACAO As campo = New campo("OPERACAO", DbType.String, 4)
+    'Estrutura da Tabela __NOME_TABELA__
+    Class __NOME_TABELA__
+__LOOP_ESTRUTURA__
+    End Class
+
+    '01-Incluir
+    Public Shared Function Incluir(__LOOP_PARM_FUNC_COMPLETO__) As Boolean
+
+        Dim bDados As BancoDados
+
+        Try
+
+
+            bDados = New BancoDados()
+
+            bDados.LimpaParametros()
+            bDados.AdicionaParametro(OPERACAO, "INCL")
+__LOOP_ADD_PARM_COMPLETO__
+
+            bDados.Executar("__NOME_PROC__")
+
+            If bDados.ObterUltimoErro = "" Then 'Sucesso!
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            LogaErro("Erro em " & NomeMetodo("__NOME_PROC__") & ": " & ex.Message)
+            Return False
+        Finally
+            bDados = Nothing
+        End Try
+
+    End Function
+
+    '02-Alterar
+    Public Shared Function Alterar(__LOOP_PARM_FUNC_COMPLETO__) As Boolean
+
+        Dim bDados As BancoDados
+
+        Try
+
+            bDados = New BancoDados()
+
+            bDados.LimpaParametros()
+            bDados.AdicionaParametro(OPERACAO, "ALTE")
+__LOOP_ADD_PARM_COMPLETO__
+
+            bDados.Executar("__NOME_PROC__")
+
+            If bDados.ObterUltimoErro = "" Then 'Sucesso!
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            LogaErro("Erro em " & NomeMetodo("__NOME_PROC__") & ": " & ex.Message)
+            Return False
+        Finally
+            bDados = Nothing
+        End Try
+    End Function
+
+    '03-Excluir
+    Public Shared Function Excluir(__LOOP_PARM_FUNC_CHAVE__) As Boolean
+
+        Dim bDados As BancoDados
+
+        Try
+
+            bDados = New BancoDados()
+
+            bDados.LimpaParametros()
+            bDados.AdicionaParametro(OPERACAO, "DELE")
+__LOOP_ADD_PARM_CHAVE__
+
+            bDados.Executar("__NOME_PROC__")
+
+            If bDados.ObterUltimoErro = "" Then 'Sucesso!
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            LogaErro("Erro em " & NomeMetodo("pSoltc") & ": " & ex.Message)
+            Return False
+        Finally
+            bDados = Nothing
+        End Try
+    End Function
+
+    '04-Listar
+    Public Shared Function Listar(__LOOP_PARM_FUNC_CHAVE__) As SuperDataSet
+
+        Dim rsRet As SuperDataSet
+        Dim bDados As BancoDados
+
+        Try
+
+            bDados = New BancoDados()
+
+            bDados.LimpaParametros()
+            bDados.AdicionaParametro(OPERACAO, "LIST")
+__LOOP_ADD_PARM_CHAVE__
+
+            rsRet = bDados.Obter("__NOME_PROC__")
+
+            Return rsRet
+
+        Catch ex As Exception
+            LogaErro("Erro em " & NomeMetodo("__NOME_PROC__") & ": " & ex.Message)
+            Return Nothing
+        Finally
+            rsRet = Nothing
+        End Try
+
+    End Function
+
+
+End Class '__NOME_PROC__

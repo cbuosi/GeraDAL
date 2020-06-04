@@ -1,0 +1,15 @@
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\bin\Debug\Sonda.Util.dll.config
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\bin\Debug\Sonda.Util.dll
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\bin\Debug\Sonda.Util.pdb
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\bin\Debug\EPPlus.dll
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\bin\Debug\Ionic.Zip.dll
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.vbprojAssemblyReference.cache
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.DropdownColorBlender.resources
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.SuperLetreiro.resources
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.frm_msgbox.resources
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.Resources.resources
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.vbproj.GenerateResource.cache
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.vbproj.CoreCompileInputs.cache
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.vbproj.CopyComplete
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.dll
+C:\Users\Carlos Buosi\Source\Repos\GeraDAL\GeraDal_1.3\Sonda.Util\obj\Debug\Sonda.Util.pdb
